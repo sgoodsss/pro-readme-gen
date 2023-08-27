@@ -7,7 +7,6 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 // File System
 const fs = require('fs');
 
-
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -91,36 +90,32 @@ const questions = [
     // End of array of questions
 ];
 
-
-inquirer
-    .prompt([
-        /* Pass your questions in here */
-        console.log(questions)
-    ])
-    .then((answers) => {
-        // Use user feedback for... whatever!!
-
-    })
-    .catch((error) => {
-        if (error.isTtyError) {
-            // Prompt couldn't be rendered in the current environment
-
-        } else {
-            // Something else went wrong
-            
-        }
-    });
-
-
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+// function writeToFile(fileName, data) {}
 
+const writeToFile = (fileName, data) => {
+    // Look up how to use fs to write a new file
 }
 
 // TODO: Create a function to initialize app
 function init() {
-
+    return inquirer
+    // Uses Questions Array
+        .prompt(questions)
+        .then((answers) => {
+            // Use user feedback for... whatever!!
+            return answers;
+        })
+        .catch((error) => {
+            if (error.isTtyError) {
+                console.error
+            }
+        });
 }
 
+
 // Function call to initialize app
-init();
+init()
+    .then(answers => {
+        console.log(answers)
+    })
