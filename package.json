@@ -1,14 +1,26 @@
 {
-  "name": "static-site",
+  "name": "readme-gen",
   "version": "1.0.0",
-  "description": "",
+  "description": "A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Sarah Goodell",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "8.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgoodsss/pro-readme-gen.git"
+  },
+  "keywords": [
+    "readme",
+    "professional"
+  ],
+  "bugs": {
+    "url": "https://github.com/sgoodsss/pro-readme-gen/issues"
+  },
+  "homepage": "https://github.com/sgoodsss/pro-readme-gen#readme"
 }
