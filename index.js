@@ -113,7 +113,6 @@ function init() {
         });
 }
 
-
 // Function call to initialize app
 init()
     .then(answers => {

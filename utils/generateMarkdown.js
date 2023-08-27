@@ -11,9 +11,27 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
+// How do I create links in my Table of Contents
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ## ${data.description}
+
+  ## Table of Contents 
+
+  ## ${data.installation}
+
+  ## ${data.usage}
+
+  ## ${data.contributors}
+
+  ## ${data.tests}
+
+  ## ${data.license}
+
+  ## Additional Questions
+  github.com/${data.github}
+  Email: ${data.email}
 `;
 }
 
