@@ -1,78 +1,126 @@
 // TODO: Include packages needed for this application
+// Need to also use GitHub Rest API for license info????
+// Inquirer
 const inquirer = require('inquirer');
+// Generate Markdown JS File
+const generateMarkdown = require('./utils/generateMarkdown.js');
+// File System
+const fs = require('fs');
+
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
-    type: 'input',
-    message: 'What is the title of your project?',
-    name: 'title',
-  },
-  {
-    type: 'input',
-    message: 'Provide a short description explaining the what, why, and how of your project.',
-    name: 'description',
-  },
-  {
-    type: 'input',
-    message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
-    name: 'installation',
-  },
-  {
-    type: 'input',
-    message: 'Provide instructions and examples for use.',
-    name: 'usage',
-  },
-  {
-    type: 'input',
-    message: 'List your collaborators, if any, with links to their GitHub profiles.  If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.  If you followed tutorials, include links to those here as well.',
-    name: 'contributors',
-  },
-  {
-    type: 'input',
-    message: 'Re-enter password to confirm:',
-    name: 'tests',
-  },
-  {
-    type: 'input',
-    message: 'Choose a license for your application:',
-    name: 'license',
-  },
-  {
-    type: 'input',
-    message: 'What is your GitHub username?',
-    name: 'github',
-  },
-  {
-    type: 'input',
-    message: 'What is your email?',
-    name: 'email',
-  }
-// End of array of questions
+        type: 'input',
+        message: 'What is the title of your project?',
+        name: 'title',
+        validate: titleInput => {
+            if (!titleInput) {
+                console.log(`Please enter your title!`)
+                return false;
+            } else {
+                return true;
+            }
+        },
+    },
+    {
+        type: 'input',
+        message: 'Provide a short description explaining the what, why, and how of your project.',
+        name: 'description',
+    },
+    {
+        type: 'input',
+        message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
+        name: 'installation',
+    },
+    {
+        type: 'input',
+        message: 'Provide instructions and examples for use.',
+        name: 'usage',
+    },
+    {
+        type: 'input',
+        message: 'List your collaborators, if any, with links to their GitHub profiles.  If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.  If you followed tutorials, include links to those here as well.',
+        name: 'contributors',
+    },
+    {
+        type: 'input',
+        message: 'Write tests for your application. Provide examples on how to run them.',
+        name: 'tests',
+    },
+    {
+        type: 'list',
+        message: 'Choose a license for your application:',
+        choices: [`MIT`, `GPLv2`, `Apache`, `GPLv3`, `Other`, `None`],
+        name: 'license',
+        validate: licenseInput => {
+            if (!licenseInput) {
+                console.log(`Please select a license!`)
+                return false;
+            } else {
+                return true;
+            }
+        },
+    },
+    {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'github',
+        validate: githubInput => {
+            if (!githubInput) {
+                console.log(`Please enter your GitHub username!`)
+                return false;
+            } else {
+                return true;
+            }
+        },
+    },
+    {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'email',
+        validate: emailInput => {
+            if (!emailInput) {
+                console.log(`Please enter your email!`)
+                return false;
+            } else {
+                return true;
+            }
+        },
+    }
+    // End of array of questions
 ];
 
 
 inquirer
-  .prompt([
-    /* Pass your questions in here */
-  ])
-  .then((answers) => {
-    // Use user feedback for... whatever!!
-  })
-  .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
-  });
+    .prompt([
+        /* Pass your questions in here */
+        console.log(questions)
+    ])
+    .then((answers) => {
+        // Use user feedback for... whatever!!
+
+    })
+    .catch((error) => {
+        if (error.isTtyError) {
+            // Prompt couldn't be rendered in the current environment
+
+        } else {
+            // Something else went wrong
+            
+        }
+    });
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+
+}
 
 // Function call to initialize app
 init();
