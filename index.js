@@ -6,6 +6,8 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 // File System
 const fs = require('fs');
+// Async promises
+const asyncFS = require('fs/promises');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -95,16 +97,28 @@ const questions = [
 
 const writeToFile = (fileName, data) => {
     // Look up how to use fs to write a new file
+    // Async Promise
+    return async function writeREADMEFile() {
+        try {
+            const content = 'Some content!';
+            await fs.writeFile('./files/generated-README.md', answers);
+        } catch (err) {
+            console.log(err);
+        }
+    }
+    writeREADMEFile();
 }
 
 // TODO: Create a function to initialize app
 function init() {
     return inquirer
-    // Uses Questions Array
+        // Uses Questions Array
         .prompt(questions)
         .then((answers) => {
             // Use user feedback for... whatever!!
             return answers;
+            // Want to include function above to write README file here
+            writeToFile(answers);
         })
         .catch((error) => {
             if (error.isTtyError) {
