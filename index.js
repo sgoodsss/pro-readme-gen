@@ -103,7 +103,7 @@ function init() {
         .then((answers) => {
             console.log(answers)
             // Uses our generateMarkdown js page to change our answers into a string
-            writeToFile(`Generated-README.md`, generateMarkdown(answers));
+            writeToFile(`.files/Generated-README.md`, generateMarkdown(answers));
         })
         .then(() => console.log(`Created Generated README`))
         .catch((error) => {
