@@ -9,7 +9,9 @@
   "author": "Sarah Goodell",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "axios": "^1.5.0",
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.2.6"
   },
   "repository": {
     "type": "git",
