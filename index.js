@@ -114,5 +114,3 @@ function init() {
 // Function call to initialize app
 init()
 
-
-// How do I connect my two js pages?
