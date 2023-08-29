@@ -1,15 +1,11 @@
 // TODO: Include packages needed for this application
-// Need to also use GitHub Rest API for license info????
 // Inquirer
 const inquirer = require('inquirer');
-// Axios- Do I need this?
-const axios = require("axios");
 // Generate Markdown JS File
 const generateMarkdown = require('./utils/generateMarkdown.js');
 // File System
-const fs = require('fs');
-// Async promises
-const asyncFS = require('fs/promises');
+const {writeFile} = require('fs').promises;
+
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -96,18 +92,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 const writeToFile = (fileName, data) => {
-    // Async Promise
-    return async function writeREADMEFile() {
-        try {
-            // how do I change this to the answers from the poll
-            console.log(`Writing Read Me`)
-            const content = 'Some content!';
-            await fs.writeFile('./files/generated-README.md', content);
-        } catch (err) {
-            console.log(err);
-        }
-    }
-    writeREADMEFile();
+    return writeFile(fileName, data)
 }
 
 // TODO: Create a function to initialize app
@@ -116,22 +101,18 @@ function init() {
         // Uses Questions Array
         .prompt(questions)
         .then((answers) => {
-            // Use user feedback for... whatever!!
-            return writeToFile(answers);
-            // Want to include function above to write README file here
-            // writeToFile(answers);
+            console.log(answers)
+            // Uses our generateMarkdown js page to change our answers into a string
+            writeToFile(`Generated-README.md`, generateMarkdown(answers));
         })
+        .then(() => console.log(`Created Generated README`))
         .catch((error) => {
-            if (error.isTtyError) {
-                console.error
-            }
+           console.log(error)
         });
 }
 
 // Function call to initialize app
 init()
-    .then(answers => {
-        console.log(answers)
-    })
+
 
 // How do I connect my two js pages?
