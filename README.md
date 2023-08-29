@@ -18,7 +18,11 @@
 
   ## Usage
 
-  After installation is complete, run the following code: ‘node index.js’ in the terminal. Answer the prompts and after completion, the file called `Generated-README.md` will be updated with your changes. It’s generated in mark down syntax so you can copy and paste that code into your project!
+  After installation is complete, run the following code: ‘node index.js’ in the terminal. Answer the prompts and after completion, the file called `Generated-README.md` will be updated with your changes. It’s generated in mark down syntax so you can copy and paste that code into your project!  Please watch the video linked below for a tutorial.
+
+  ![Screen Recording of App](https://drive.google.com/file/d/1P_-J5fLZghvW-kjZCfleabTCQCs1XL1u/view?usp=sharing)
+  https://drive.google.com/file/d/1P_-J5fLZghvW-kjZCfleabTCQCs1XL1u/view?usp=sharing
+
 
   ## Credits
 How To Create Interactive Command-line Prompts with Inquirer.js. (2019, January 17). DigitalOcean. Retrieved August 27, 2023, from https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts

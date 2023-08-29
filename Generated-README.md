@@ -1,9 +1,9 @@
-# Professional README Generator
+# The Cute Puppy Project
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
 
-  A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
+  An app to show the user different photos of cute puppies!
 
   ## Table of Contents 
 
@@ -14,19 +14,19 @@
 
   ## Installation
 
-  n/a
+  N/a
 
   ## Usage
 
-  n/a
+  N/a
 
   ## Credits
   
-  n/a
+  N/a
 
   ## Tests
   
-  n/a
+  N/a
 
   ## License
   https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
