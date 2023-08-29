@@ -3,7 +3,7 @@
 
   ## Description
 
-  An app to show the user different photos of cute puppies!
+  An app for users who love cute puppies
 
   ## Table of Contents 
 
@@ -14,19 +14,19 @@
 
   ## Installation
 
-  N/a
+  Open up the link to this application in your browser!
 
   ## Usage
 
-  N/a
+  Click on the button on the bottom of the page to rotate through pictures of cute puppies
 
   ## Credits
   
-  N/a
+  N/A
 
   ## Tests
   
-  N/a
+  N/A
 
   ## License
   https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
