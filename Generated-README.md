@@ -14,28 +14,19 @@
 
   ## Installation
 
-  On the homepage of my repo, click on the green `Code` button.  Download the zip file and copy it to a directory of your choice or clone to a directory of your choice using your terminal. Open the file in VS Code. Open the terminal in VS Code and make sure you’re in the root directory ‘pro-README-gen'. You’ll now be ready to run the app!
+  n/a
 
   ## Usage
 
-  After installation is complete, run the following code: ‘node index.js’ in the terminal. Answer the prompts and after completion, the file called `Generated-README.md` will be updated with your changes. It’s generated in mark down syntax so you can copy and paste that code into your project!
+  n/a
 
   ## Credits
-How To Create Interactive Command-line Prompts with Inquirer.js. (2019, January 17). DigitalOcean. Retrieved August 27, 2023, from https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts
-
-inquirer. (2022, April 28). inquirer - npm. Retrieved August 27, 2023, from https://www.npmjs.com/package/inquirer/v/8.2.4
-
-Markdown License Badges for your Project · GitHub. (n.d.). GitHub Gist. Retrieved August 29, 2023, from https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
-
-Open source license usage on GitHub.com. (2015, March 9). The GitHub Blog. Retrieved August 27, 2023, from https://github.blog/2015-03-09-open-source-license-usage-on-github-com/
-
-Professional README Guide | The Full-Stack Blog. (2022, October 27). GitHub Pages. Retrieved August 27, 2023, from https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
-
-Writing files with Node.js. (n.d.). NodeJS Dev. Retrieved August 28, 2023, from https://nodejs.dev/en/learn/writing-files-with-nodejs/
+  
+  n/a
 
   ## Tests
   
- N/A
+  n/a
 
   ## License
   https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt

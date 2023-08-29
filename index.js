@@ -101,9 +101,8 @@ function init() {
         // Uses Questions Array
         .prompt(questions)
         .then((answers) => {
-            console.log(answers)
             // Uses our generateMarkdown js page to change our answers into a string
-            writeToFile(`.files/Generated-README.md`, generateMarkdown(answers));
+            writeToFile(`Generated-README.md`, generateMarkdown(answers));
         })
         .then(() => console.log(`Created Generated README`))
         .catch((error) => {
