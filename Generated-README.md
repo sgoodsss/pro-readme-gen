@@ -1,9 +1,9 @@
-# The Cute Puppy Project
+# SVG Logo Generator
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
 
-  An app for users who love cute puppies
+  A Node.js command-line application that takes in user input to generate a logo and save it as an SVG file. This application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a .svg file.
 
   ## Table of Contents 
 
@@ -14,19 +14,19 @@
 
   ## Installation
 
-  Open up the link to this application in your browser!
+  
 
   ## Usage
 
-  Click on the button on the bottom of the page to rotate through pictures of cute puppies
+  
 
   ## Credits
   
-  N/A
+  I used the resources provided on MyBootCampSpot along with the help of my tutor and TAs.
 
   ## Tests
   
-  N/A
+  
 
   ## License
   https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
