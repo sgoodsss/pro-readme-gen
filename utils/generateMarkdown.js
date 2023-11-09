@@ -1194,12 +1194,15 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## License
+  Please refer to the LICENSE in the repo.
   ${renderLicenseLink(data.license)}
-  ${renderLicenseSection(data.license)}
+  
 
   ## Additional Questions
+  If you have any additional questions or would like to get in contact with me, please email me at ${data.email}.
+  
+  My GitHub Profile:
   github.com/${data.github}
-  Email: ${data.email}
 `;
 }
 

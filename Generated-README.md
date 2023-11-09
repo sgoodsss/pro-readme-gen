@@ -1,9 +1,9 @@
-# SVG Logo Generator
+# Social Media API
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
 
-  A Node.js command-line application that takes in user input to generate a logo and save it as an SVG file. This application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a .svg file.
+  an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.  Uses Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
   ## Table of Contents 
 
@@ -14,15 +14,15 @@
 
   ## Installation
 
-  
+  On the homepage of my repo, click on the green Code button. Download the zip file and copy it to a directory of your choice or clone to a directory of your choice using your terminal. Open the file in VS Code. Open the terminal in VS Code and make sure you’re in the root directory ‘ecommerce-backend'. You’ll now be ready to run the app!
 
   ## Usage
 
-  
+  After installation is complete, run the command npm i to install the packages need for this application. Next, connect to MySQL using mysql -u root -p and enter your password. Use the schema.sql and seeds.sql to set up the database. Finally, run npm start the terminal. Answer the prompts to interact with the database. Please watch the video linked below for a tutorial.
 
   ## Credits
   
-  I used the resources provided on MyBootCampSpot along with the help of my tutor and TAs.
+  
 
   ## Tests
   
